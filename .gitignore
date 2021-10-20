@@ -1,0 +1,6 @@
+node_modules
+dist
+# esmon temp files
+temp
+# config file
+config.ts

@@ -1,0 +1,6 @@
+{
+  "extends": "@hannoeru",
+  "rules": {
+    "no-console": "off"
+  }
+}

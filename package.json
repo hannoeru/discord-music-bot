@@ -1,0 +1,29 @@
+{
+  "name": "music-bot",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "esmon src/index.ts",
+    "build": "esmon build src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
+  },
+  "author": "Han <me@hanlee.co>",
+  "license": "MIT",
+  "devDependencies": {
+    "@hannoeru/eslint-config": "^0.3.0",
+    "eslint": "^8.0.1",
+    "esmon": "^1.4.1",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "@discordjs/voice": "^0.6.0",
+    "discord-api-types": "^0.24.0",
+    "discord.js": "^13.2.0",
+    "libsodium-wrappers": "^0.7.9",
+    "youtube-dl-exec": "^1.3.2",
+    "ytdl-core": "^4.9.1"
+  }
+}
