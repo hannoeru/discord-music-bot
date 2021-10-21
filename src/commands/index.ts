@@ -12,6 +12,7 @@ import resume from './music/resume'
 import queue from './music/queue'
 import skip from './music/skip'
 import clear from './music/clear'
+import volume from './music/volume'
 
 export const commands = new Collection<string, Command>()
 
@@ -27,6 +28,7 @@ export async function registerCommands(client: Client<true>) {
   commands.set(resume.name, resume)
   commands.set(queue.name, queue)
   commands.set(clear.name, clear)
+  commands.set(volume.name, volume)
 
   logger.info(`Commands list:\n${[...commands.values()].map((command) => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
