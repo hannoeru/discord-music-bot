@@ -1,4 +1,5 @@
-import { getInfo } from 'ytdl-core'
+import ytpl from 'ytpl'
+
 import { GuildMember, MessageEmbed } from 'discord.js'
 import {
   joinVoiceChannel,
@@ -14,12 +15,12 @@ import { logger } from '../../logger'
 import type { Command } from '../../types'
 
 const command: Command = {
-  name: 'play',
-  description: 'Play a song from youtube',
+  name: 'playlist',
+  description: 'Add a youtube playlist to queue',
   options: [
     {
       name: 'url',
-      description: 'Youtube URL',
+      description: 'Youtube playlist URL',
       type: 'STRING',
       required: true,
     },
@@ -71,37 +72,44 @@ const command: Command = {
     }
 
     try {
-      const info = (await getInfo(url)).videoDetails
-      // Attempt to create a Track from the user's video URL
-      const track = Track.from(info.title, url, {
-        onStart() {
-          interaction
-            .followUp({ content: 'Now playing!', ephemeral: true })
-            .catch(logger.warn)
-        },
-        onFinish() {
-          interaction
-            .followUp({ content: 'Now finished!', ephemeral: true })
-            .catch(logger.warn)
-        },
-        onError(error: any) {
-          logger.warn(error)
-          interaction
-            .followUp({ content: `Error: ${error.message}`, ephemeral: true })
-            .catch(logger.warn)
-        },
+      const playlist = await ytpl(url, {
+        gl: 'JP',
+        hl: 'ja',
       })
-      // Enqueue the track and reply a success message to the user
-      subscription.enqueue(track)
-      const youtubeEmbed = new MessageEmbed()
-        .setTitle(info.title)
-        .setURL(info.video_url)
-        .setThumbnail(info.thumbnails[0].url)
-        .setFooter(`${interaction.user.tag} added this song`, interaction.user.avatarURL() || '')
+
+      for (const song of playlist.items) {
+        const track = Track.from(song.title, song.url, {
+          onStart() {
+            const youtubeEmbed = new MessageEmbed()
+              .setTitle(song.title)
+              .setURL(song.url)
+              .setThumbnail(song.thumbnails[0].url || '')
+              .setFooter(`Song from playlist: ${playlist.title}`, interaction.user.avatarURL() || '')
+            interaction
+              .followUp({ content: `Now playing: **${song.title}**`, embeds: [youtubeEmbed] })
+              .catch(logger.warn)
+          },
+          onFinish() {},
+          onError(error: any) {
+            logger.warn(error)
+            interaction
+              .followUp({ content: `Error: ${error.message}\nSong: ${song.title}`, ephemeral: true })
+              .catch(logger.warn)
+          },
+        })
+        // Enqueue the track and reply a success message to the user
+        subscription.enqueue(track)
+      }
+
+      const youtubePlaylistEmbed = new MessageEmbed()
+        .setTitle(playlist.title)
+        .setURL(playlist.url)
+        .setThumbnail(playlist.thumbnails[0].url || '')
+        .setFooter(`${interaction.user.tag} added this playlist`, interaction.user.avatarURL() || '')
 
       await interaction.editReply({
-        content: `Queue added: **${info.title}**`,
-        embeds: [youtubeEmbed],
+        content: `Playlist added: **${playlist.title}**`,
+        embeds: [youtubePlaylistEmbed],
       })
     } catch (error) {
       logger.error(`Failed to play track: ${error}`)

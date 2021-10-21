@@ -1,10 +1,7 @@
 // License: https://github.com/discordjs/voice/blob/f1869a9af5a44ec9a4f52c2dd282352b1521427d/LICENSE
 
-import ytdlCore, { getInfo } from 'ytdl-core'
 import { AudioResource, createAudioResource, demuxProbe } from '@discordjs/voice'
 import { raw as ytdl } from 'youtube-dl-exec'
-
-type TrackInfo = ytdlCore.videoInfo['videoDetails']
 
 /**
  * This is the data required to create a Track object
@@ -12,7 +9,6 @@ type TrackInfo = ytdlCore.videoInfo['videoDetails']
 export interface TrackData {
   url: string
   title: string
-  info: TrackInfo
   onStart: () => void
   onFinish: () => void
   onError: (error: Error) => void
@@ -33,15 +29,13 @@ const noop = () => {}
 export class Track implements TrackData {
   public readonly url: string
   public readonly title: string
-  public readonly info: TrackInfo
   public readonly onStart: () => void
   public readonly onFinish: () => void
   public readonly onError: (error: Error) => void
 
-  private constructor({ url, title, info, onStart, onFinish, onError }: TrackData) {
+  private constructor({ url, title, onStart, onFinish, onError }: TrackData) {
     this.url = url
     this.title = title
-    this.info = info
     this.onStart = onStart
     this.onFinish = onFinish
     this.onError = onError
@@ -89,9 +83,7 @@ export class Track implements TrackData {
    * @param methods Lifecycle callbacks
    * @returns The created Track
    */
-  public static async from(url: string, methods: Pick<Track, 'onStart' | 'onFinish' | 'onError'>): Promise<Track> {
-    const info = (await getInfo(url)).videoDetails
-
+  public static from(title: string, url: string, methods: Pick<Track, 'onStart' | 'onFinish' | 'onError'>): Track {
     // The methods are wrapped so that we can ensure that they are only called once.
     const wrappedMethods = {
       onStart() {
@@ -109,8 +101,7 @@ export class Track implements TrackData {
     }
 
     return new Track({
-      title: info.title,
-      info,
+      title,
       url,
       ...wrappedMethods,
     })

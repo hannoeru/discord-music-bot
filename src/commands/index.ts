@@ -6,10 +6,12 @@ import user from './user'
 import join from './music/join'
 import leave from './music/leave'
 import play from './music/play'
+import playlist from './music/playlist'
 import pause from './music/pause'
 import resume from './music/resume'
 import queue from './music/queue'
 import skip from './music/skip'
+import clear from './music/clear'
 
 export const commands = new Collection<string, Command>()
 
@@ -18,11 +20,13 @@ export async function registerCommands(client: Client<true>) {
   commands.set(user.name, user)
   commands.set(join.name, join)
   commands.set(play.name, play)
+  commands.set(playlist.name, playlist)
   commands.set(skip.name, skip)
   commands.set(leave.name, leave)
   commands.set(pause.name, pause)
   commands.set(resume.name, resume)
   commands.set(queue.name, queue)
+  commands.set(clear.name, clear)
 
   logger.info(`Commands list:\n${[...commands.values()].map((command) => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars

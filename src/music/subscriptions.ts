@@ -136,6 +136,13 @@ export class MusicSubscription {
   }
 
   /**
+   * Empties the queue
+   */
+  public clearQueue() {
+    this.queue = []
+  }
+
+  /**
    * Attempts to play a Track from the queue
    */
   private async processQueue(): Promise<void> {
