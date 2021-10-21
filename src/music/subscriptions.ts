@@ -27,11 +27,13 @@ export class MusicSubscription {
   public queue: Track[]
   public queueLock = false
   public readyLock = false
+  public volume: number
 
   public constructor(voiceConnection: VoiceConnection) {
     this.voiceConnection = voiceConnection
     this.audioPlayer = createAudioPlayer()
     this.queue = []
+    this.volume = 90
 
     this.voiceConnection.on('error', (e) => {
       logger.warn(`VoiceConnection Error: ${e}`)
@@ -143,6 +145,16 @@ export class MusicSubscription {
   }
 
   /**
+   * Set player volume
+   */
+  public setVolume(volume: number) {
+    this.volume = volume
+    // Set default volume to 90%
+    if (this.audioPlayer.state.status === AudioPlayerStatus.Playing)
+      this.audioPlayer.state.resource.volume?.setVolume(volume / 100)
+  }
+
+  /**
    * Attempts to play a Track from the queue
    */
   private async processQueue(): Promise<void> {
@@ -159,7 +171,7 @@ export class MusicSubscription {
       // Attempt to convert the Track into an AudioResource (i.e. start streaming the video)
       const resource = await nextTrack.createAudioResource()
       // Set default volume to 90%
-      resource.volume?.setVolume(0.9)
+      resource.volume?.setVolume(this.volume / 100)
       this.audioPlayer.play(resource)
       this.queueLock = false
     } catch (error) {

@@ -1,4 +1,3 @@
-import { AudioPlayerStatus } from '@discordjs/voice'
 import { subscriptions } from '../../subscription'
 
 import type { Command } from '../../types'
@@ -22,8 +21,7 @@ const command: Command = {
       return interaction.reply('Please enter a volume number from 1 - 100')
 
     if (subscription) {
-      if (subscription.audioPlayer.state.status === AudioPlayerStatus.Playing)
-        subscription.audioPlayer.state.resource.volume?.setVolume(volume / 100)
+      subscription.setVolume(volume)
 
       await interaction.reply({ content: `Volume setted to ${volume}` })
     } else {
