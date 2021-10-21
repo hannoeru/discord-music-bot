@@ -158,6 +158,8 @@ export class MusicSubscription {
     try {
       // Attempt to convert the Track into an AudioResource (i.e. start streaming the video)
       const resource = await nextTrack.createAudioResource()
+      // Set default volume to 90%
+      resource.volume?.setVolume(0.9)
       this.audioPlayer.play(resource)
       this.queueLock = false
     } catch (error) {
