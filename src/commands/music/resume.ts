@@ -12,7 +12,7 @@ const command: Command = {
       subscription.audioPlayer.unpause()
       await interaction.reply({ content: 'Unpaused!', ephemeral: true })
     } else {
-      await interaction.reply('Not playing in this server!')
+      await interaction.reply('Nothing is playing on this server!')
     }
   },
 }
