@@ -18,8 +18,8 @@ const command: Command = {
     const subscription = subscriptions.get(interaction.guild!.id)
     const volume = interaction.options.getNumber('volume')
 
-    if (!volume)
-      return interaction.reply('Please enter a number for volume')
+    if (!volume || volume < 0 || volume > 100)
+      return interaction.reply('Please enter a volume number from 1 - 100')
 
     if (subscription) {
       if (subscription.audioPlayer.state.status === AudioPlayerStatus.Playing)
