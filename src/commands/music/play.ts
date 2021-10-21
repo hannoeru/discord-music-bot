@@ -71,7 +71,9 @@ const command: Command = {
     }
 
     try {
-      const info = (await getInfo(url)).videoDetails
+      const info = (await getInfo(url, {
+        lang: 'ja',
+      })).videoDetails
       // Attempt to create a Track from the user's video URL
       const track = Track.from(info.title, url, {
         onStart() {
