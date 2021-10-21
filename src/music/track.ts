@@ -1,6 +1,6 @@
 // License: https://github.com/discordjs/voice/blob/f1869a9af5a44ec9a4f52c2dd282352b1521427d/LICENSE
 
-import { AudioResource, createAudioResource, demuxProbe } from '@discordjs/voice'
+import { AudioResource, createAudioResource } from '@discordjs/voice'
 import { raw as ytdl } from 'youtube-dl-exec'
 
 /**
@@ -68,9 +68,7 @@ export class Track implements TrackData {
       }
       process
         .once('spawn', () => {
-          demuxProbe(stream)
-            .then(probe => resolve(createAudioResource(probe.stream, { metadata: this, inputType: probe.type, inlineVolume: true })))
-            .catch(onError)
+          resolve(createAudioResource(stream, { metadata: this, inlineVolume: true }))
         })
         .catch(onError)
     })
