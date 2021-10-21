@@ -1,5 +1,6 @@
 import { Client, Collection } from 'discord.js'
 import { Command } from '../types'
+import { logger } from '../logger'
 import ping from './ping'
 import user from './user'
 import join from './music/join'
@@ -23,11 +24,11 @@ export async function registerCommands(client: Client<true>) {
   commands.set(resume.name, resume)
   commands.set(queue.name, queue)
 
-  console.log([...commands.values()].map((command) => {
+  logger.info(`Commands list:\n${[...commands.values()].map((command) => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { execute, ...cmd } = command
-    return cmd
-  }))
+    return `${cmd.name} - ${cmd.description}`
+  }).join('\n')}`)
 
   // Send commands set to discord
   await client.application.commands.set([...commands.values()].map((command) => {
@@ -36,5 +37,5 @@ export async function registerCommands(client: Client<true>) {
     return cmd
   }))
 
-  console.log('Commands registered!')
+  logger.info('Commands registered!')
 }

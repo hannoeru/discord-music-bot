@@ -1,9 +1,10 @@
 import { GuildMember } from 'discord.js'
 
-import { joinVoiceChannel, getVoiceConnection, entersState, VoiceConnectionStatus } from '@discordjs/voice'
+import { joinVoiceChannel, entersState, VoiceConnectionStatus } from '@discordjs/voice'
 import { subscriptions } from '../../subscription'
 import { MusicSubscription } from '../../music/subscriptions'
 
+import { logger } from '../../logger'
 import type { Command } from '../../types'
 
 const command: Command = {
@@ -22,13 +23,12 @@ const command: Command = {
       && interaction.member.voice.channel
     ) {
       const channel = interaction.member.voice.channel
-      const voiceConnection = getVoiceConnection(channel.guild.id, channel.id)
-        || joinVoiceChannel({
-          channelId: channel.id,
-          guildId: channel.guild.id,
-          adapterCreator: channel.guild.voiceAdapterCreator as any,
-          group: channel.id,
-        })
+      const voiceConnection = joinVoiceChannel({
+        channelId: channel.id,
+        guildId: channel.guild.id,
+        adapterCreator: channel.guild.voiceAdapterCreator as any,
+        group: channel.id,
+      })
       subscription = new MusicSubscription(voiceConnection)
       subscriptions.set(interaction.guildId!, subscription)
     }
@@ -43,7 +43,7 @@ const command: Command = {
     try {
       await entersState(subscription.voiceConnection, VoiceConnectionStatus.Ready, 20e3)
     } catch (error) {
-      console.warn(error)
+      logger.warn(error)
       return interaction.reply('Failed to join voice channel within 20 seconds, please try again later!')
     }
 

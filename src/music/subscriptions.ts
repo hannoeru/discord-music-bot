@@ -12,6 +12,7 @@ import {
   VoiceConnectionStatus,
 } from '@discordjs/voice'
 
+import { logger } from '../logger'
 import { Track } from './track'
 
 const wait = promisify(setTimeout)
@@ -32,7 +33,9 @@ export class MusicSubscription {
     this.audioPlayer = createAudioPlayer()
     this.queue = []
 
-    this.voiceConnection.on('error', console.warn)
+    this.voiceConnection.on('error', (e) => {
+      logger.warn(`VoiceConnection Error: ${e}`)
+    })
 
     this.voiceConnection.on('stateChange', async(_, newState) => {
       if (newState.status === VoiceConnectionStatus.Disconnected) {
@@ -49,6 +52,7 @@ export class MusicSubscription {
             // Probably moved voice channel
           } catch {
             this.voiceConnection.destroy()
+            logger.warn(`VoiceConnection Disconnected: ${this.voiceConnection.joinConfig.channelId}`)
             // Probably removed from voice channel
           }
         } else if (this.voiceConnection.rejoinAttempts < 5) {
@@ -62,12 +66,14 @@ export class MusicSubscription {
             The disconnect in this case may be recoverable, but we have no more remaining attempts - destroy.
           */
           this.voiceConnection.destroy()
+          logger.info(`VoiceConnection Disconnected: ${this.voiceConnection.joinConfig.channelId}`)
         }
       } else if (newState.status === VoiceConnectionStatus.Destroyed) {
         /*
           Once destroyed, stop the subscription
         */
         this.stop()
+        logger.info(`VoiceConnection Destroyed: ${this.voiceConnection.joinConfig.channelId}`)
       } else if (
         !this.readyLock
         && (newState.status === VoiceConnectionStatus.Connecting || newState.status === VoiceConnectionStatus.Signalling)
@@ -80,11 +86,14 @@ export class MusicSubscription {
         this.readyLock = true
         try {
           await entersState(this.voiceConnection, VoiceConnectionStatus.Ready, 20_000)
-        } catch {
+        } catch (error) {
           if (this.voiceConnection.state.status !== VoiceConnectionStatus.Destroyed) this.voiceConnection.destroy()
+          logger.warn(`Failed to join voice channel: ${error}`)
         } finally {
           this.readyLock = false
         }
+
+        logger.info(`VoiceConnection Connected: ${this.voiceConnection.joinConfig.channelId}`)
       }
     })
 
@@ -113,6 +122,7 @@ export class MusicSubscription {
    */
   public enqueue(track: Track) {
     this.queue.push(track)
+    logger.info(`Queue added: ${track.title}`)
     this.processQueue()
   }
 

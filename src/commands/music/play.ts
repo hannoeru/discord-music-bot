@@ -3,13 +3,13 @@ import {
   joinVoiceChannel,
   entersState,
   VoiceConnectionStatus,
-  getVoiceConnection,
 } from '@discordjs/voice'
 
 import { MusicSubscription } from '../../music/subscriptions'
 import { Track } from '../../music/track'
 import { subscriptions } from '../../subscription'
 
+import { logger } from '../../logger'
 import type { Command } from '../../types'
 
 const command: Command = {
@@ -44,13 +44,13 @@ const command: Command = {
       && interaction.member.voice.channel
     ) {
       const channel = interaction.member.voice.channel
-      const voiceConnection = getVoiceConnection(channel.guild.id, channel.id)
-        || joinVoiceChannel({
-          channelId: channel.id,
-          guildId: channel.guild.id,
-          adapterCreator: channel.guild.voiceAdapterCreator as any,
-          group: channel.id,
-        })
+      const voiceConnection = joinVoiceChannel({
+        channelId: channel.id,
+        guildId: channel.guild.id,
+        adapterCreator: channel.guild.voiceAdapterCreator as any,
+        group: channel.id,
+      })
+
       subscription = new MusicSubscription(voiceConnection)
       subscriptions.set(interaction.guildId!, subscription)
     }
@@ -65,7 +65,6 @@ const command: Command = {
     try {
       await entersState(subscription.voiceConnection, VoiceConnectionStatus.Ready, 20e3)
     } catch (error) {
-      console.warn(error)
       await interaction.editReply('Failed to join voice channel within 20 seconds, please try again later!')
       return
     }
@@ -76,18 +75,18 @@ const command: Command = {
         onStart() {
           interaction
             .followUp({ content: 'Now playing!', ephemeral: true })
-            .catch(console.warn)
+            .catch(logger.warn)
         },
         onFinish() {
           interaction
             .followUp({ content: 'Now finished!', ephemeral: true })
-            .catch(console.warn)
+            .catch(logger.warn)
         },
         onError(error: any) {
-          console.warn(error)
+          logger.warn(error)
           interaction
             .followUp({ content: `Error: ${error.message}`, ephemeral: true })
-            .catch(console.warn)
+            .catch(logger.warn)
         },
       })
       // Enqueue the track and reply a success message to the user
@@ -103,7 +102,7 @@ const command: Command = {
         embeds: [youtubeEmbed],
       })
     } catch (error) {
-      console.warn(error)
+      logger.error(`Failed to play track: ${error}`)
       await interaction.editReply('Failed to play track, please try again later!')
     }
   },
