@@ -78,7 +78,7 @@ const command: Command = {
       })
 
       for (const song of playlist.items) {
-        const track = Track.from(song.title, song.url, {
+        const track = Track.from(song.title, song.shortUrl, {
           onStart() {
             const youtubeEmbed = new MessageEmbed()
               .setTitle(song.title)
