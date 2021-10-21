@@ -69,7 +69,7 @@ export class Track implements TrackData {
       process
         .once('spawn', () => {
           demuxProbe(stream)
-            .then(probe => resolve(createAudioResource(probe.stream, { metadata: this, inputType: probe.type })))
+            .then(probe => resolve(createAudioResource(probe.stream, { metadata: this, inputType: probe.type, inlineVolume: true })))
             .catch(onError)
         })
         .catch(onError)
