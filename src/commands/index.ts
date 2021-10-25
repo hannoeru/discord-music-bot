@@ -36,6 +36,13 @@ export async function registerCommands(client: Client<true>) {
     return `${cmd.name} - ${cmd.description}`
   }).join('\n')}`)
 
+  const exitCommands = await client.application.commands.fetch()
+
+  if (exitCommands.size) {
+    logger.info('Commands exits!')
+    return
+  }
+
   // Send commands set to discord
   await client.application.commands.set([...commands.values()].map((command) => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
