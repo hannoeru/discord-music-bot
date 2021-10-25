@@ -1,4 +1,4 @@
-import { subscriptions } from '../../subscription'
+import { subscriptions } from '../../music'
 
 import type { Command } from '../../types'
 

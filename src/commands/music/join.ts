@@ -1,10 +1,9 @@
 import { GuildMember } from 'discord.js'
-
 import { joinVoiceChannel, entersState, VoiceConnectionStatus } from '@discordjs/voice'
-import { subscriptions } from '../../subscription'
-import { MusicSubscription } from '../../music/subscriptions'
 
+import { subscriptions, MusicSubscription } from '../../music'
 import { logger } from '../../logger'
+
 import type { Command } from '../../types'
 
 const command: Command = {

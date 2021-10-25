@@ -1,17 +1,13 @@
 import ytpl from 'ytpl'
-
-import { GuildMember, MessageEmbed } from 'discord.js'
+import { MessageEmbed } from 'discord.js'
 import {
-  joinVoiceChannel,
   entersState,
   VoiceConnectionStatus,
 } from '@discordjs/voice'
 
-import { MusicSubscription } from '../../music/subscriptions'
-import { Track } from '../../music/track'
-import { subscriptions } from '../../subscription'
-
+import { Track, createOrGetSubscription } from '../../music'
 import { logger } from '../../logger'
+
 import type { Command } from '../../types'
 
 const command: Command = {
@@ -36,26 +32,7 @@ const command: Command = {
       return
     }
 
-    let subscription = subscriptions.get(interaction.guildId!)
-
-    // If a connection to the guild doesn't already exist and the user is in a voice channel, join that channel
-    // and create a subscription.
-    if (
-      !subscription
-      && interaction.member instanceof GuildMember
-      && interaction.member.voice.channel
-    ) {
-      const channel = interaction.member.voice.channel
-      const voiceConnection = joinVoiceChannel({
-        channelId: channel.id,
-        guildId: channel.guild.id,
-        adapterCreator: channel.guild.voiceAdapterCreator as any,
-        group: channel.id,
-      })
-
-      subscription = new MusicSubscription(voiceConnection)
-      subscriptions.set(interaction.guildId!, subscription)
-    }
+    const subscription = await createOrGetSubscription(interaction)
 
     // If there is no subscription, tell the user they need to join a channel.
     if (!subscription) {
@@ -85,8 +62,7 @@ const command: Command = {
               .setURL(song.url)
               .setThumbnail(song.thumbnails[0].url || '')
               .setFooter(`Song from playlist: ${playlist.title}`, interaction.user.avatarURL() || '')
-            interaction
-              .followUp({ content: `Now playing: **${song.title}**`, embeds: [youtubeEmbed] })
+            interaction.channel?.send({ content: `Now playing: **${song.title}**`, embeds: [youtubeEmbed] })
               .catch(logger.warn)
           },
           onFinish() {},

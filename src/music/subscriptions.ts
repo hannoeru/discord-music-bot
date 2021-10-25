@@ -15,7 +15,12 @@ import {
 import { logger } from '../logger'
 import { Track } from './track'
 
+import type { Snowflake } from 'discord.js'
+
 const wait = promisify(setTimeout)
+
+// eslint-disable-next-line no-use-before-define
+export const subscriptions = new Map<Snowflake, MusicSubscription>()
 
 /**
  * A MusicSubscription exists for each active VoiceConnection. Each subscription has its own audio player and queue,
@@ -76,6 +81,7 @@ export class MusicSubscription {
         */
         this.stop()
         logger.info(`VoiceConnection Destroyed: ${this.voiceConnection.joinConfig.channelId}`)
+        subscriptions.delete(this.voiceConnection.joinConfig.guildId)
       } else if (
         !this.readyLock
         && (newState.status === VoiceConnectionStatus.Connecting || newState.status === VoiceConnectionStatus.Signalling)

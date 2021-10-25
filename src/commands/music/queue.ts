@@ -1,6 +1,5 @@
 import { AudioResource, AudioPlayerStatus } from '@discordjs/voice'
-import { subscriptions } from '../../subscription'
-import { Track } from '../../music/track'
+import { subscriptions, Track } from '../../music'
 
 import type { Command } from '../../types'
 
