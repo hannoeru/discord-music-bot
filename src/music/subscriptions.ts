@@ -12,6 +12,7 @@ import {
   VoiceConnectionStatus,
 } from '@discordjs/voice'
 
+import config from '../../config'
 import { logger } from '../logger'
 import { Track } from './track'
 
@@ -38,7 +39,7 @@ export class MusicSubscription {
     this.voiceConnection = voiceConnection
     this.audioPlayer = createAudioPlayer()
     this.queue = []
-    this.volume = 90
+    this.volume = config.DEFAULT_VOLUME
 
     this.voiceConnection.on('error', (e) => {
       logger.warn(`VoiceConnection Error: ${e}`)
