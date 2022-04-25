@@ -20,7 +20,7 @@
     "@discordjs/opus": "^0.7.0",
     "@discordjs/rest": "^0.4.1",
     "@discordjs/voice": "^0.9.0",
-    "discord-api-types": "^0.31.1",
+    "discord-api-types": "^0.31.2",
     "discord.js": "^13.6.0",
     "libsodium-wrappers": "^0.7.10",
     "pino": "^7.10.0",
