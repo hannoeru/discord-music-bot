@@ -5,7 +5,7 @@ specifiers:
   '@discordjs/rest': ^0.4.1
   '@discordjs/voice': ^0.9.0
   '@hannoeru/eslint-config': ^0.7.7
-  discord-api-types: ^0.31.1
+  discord-api-types: ^0.31.2
   discord.js: ^13.6.0
   eslint: ^8.14.0
   esmon: ^2.0.1
@@ -21,7 +21,7 @@ dependencies:
   '@discordjs/opus': 0.7.0
   '@discordjs/rest': 0.4.1
   '@discordjs/voice': 0.9.0_@discordjs+opus@0.7.0
-  discord-api-types: 0.31.1
+  discord-api-types: 0.31.2
   discord.js: 13.6.0
   libsodium-wrappers: 0.7.10
   pino: 7.10.0
@@ -981,8 +981,8 @@ packages:
     resolution: {integrity: sha512-Ekq1ICNpOTVajXKZguNFrsDeTmam+ZeA38txsNLZnANdXUjU6QBPIZLUQTC6MzigFGb0Tt8vk4xLnXmzv0shNg==}
     dev: false
 
-  /discord-api-types/0.31.1:
-    resolution: {integrity: sha512-QBWl1/x20ZyKAiY750wuWAWokudhlOnQzXhCTEkQsCNOOM9tU/HIqkpLgZqJI1EFmZMeWHdaRKzpiD7n7iCS+w==}
+  /discord-api-types/0.31.2:
+    resolution: {integrity: sha512-gpzXTvFVg7AjKVVJFH0oJGC0q0tO34iJGSHZNz9u3aqLxlD6LfxEs9wWVVikJqn9gra940oUTaPFizCkRDcEiA==}
     dev: false
 
   /discord.js/13.6.0:
