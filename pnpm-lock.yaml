@@ -5,7 +5,7 @@ specifiers:
   '@discordjs/rest': ^0.5.0
   '@discordjs/voice': ^0.10.0
   '@hannoeru/eslint-config': ^0.8.10
-  discord-api-types: ^0.36.0
+  discord-api-types: ^0.36.1
   discord.js: ^13.8.1
   eslint: ^8.19.0
   esmon: ^2.0.1
@@ -13,7 +13,7 @@ specifiers:
   pino: ^8.1.0
   pino-pretty: ^8.1.0
   typescript: ^4.7.4
-  youtube-dl-exec: ^2.0.12
+  youtube-dl-exec: ^2.1.0
   ytdl-core: ^4.11.0
   ytpl: ^2.3.0
 
@@ -21,12 +21,12 @@ dependencies:
   '@discordjs/opus': 0.8.0
   '@discordjs/rest': 0.5.0
   '@discordjs/voice': 0.10.0_@discordjs+opus@0.8.0
-  discord-api-types: 0.36.0
+  discord-api-types: 0.36.1
   discord.js: 13.8.1
   libsodium-wrappers: 0.7.10
   pino: 8.1.0
   pino-pretty: 8.1.0
-  youtube-dl-exec: 2.0.12
+  youtube-dl-exec: 2.1.0
   ytdl-core: 4.11.0
   ytpl: 2.3.0
 
@@ -1016,8 +1016,8 @@ packages:
     resolution: {integrity: sha512-dvO5M52v7m7Dy96+XUnzXNsQ/0npsYpU6dL205kAtEDueswoz3aU3bh1UMoK4cQmcGtB1YRyLKqp+DXi05lzFg==}
     dev: false
 
-  /discord-api-types/0.36.0:
-    resolution: {integrity: sha512-bazR7FWko6JY4xwoa4Ds4SCRTKGvbzq2ivAuZxiR79RJipU+IXYNvy4tiUt8ixcs2bI04JOQwgHvz491lruBaw==}
+  /discord-api-types/0.36.1:
+    resolution: {integrity: sha512-PTDinUU574hXA9Ko9wrftL1iww1raNiRVKjuPIWQ5Li1g7vQPArpZWw9x01kh/IXLPdzSAJ6H8T0eAYzxzFzIg==}
     dev: false
 
   /discord.js/13.8.1:
@@ -3388,7 +3388,7 @@ packages:
     dev: true
 
   /tr46/0.0.3:
-    resolution: {integrity: sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=}
+    resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
     dev: false
 
   /ts-mixer/6.0.1:
@@ -3518,11 +3518,11 @@ packages:
     dev: true
 
   /webidl-conversions/3.0.1:
-    resolution: {integrity: sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=}
+    resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
     dev: false
 
   /whatwg-url/5.0.0:
-    resolution: {integrity: sha1-lmRU6HZUYuN2RNNib2dCzotwll0=}
+    resolution: {integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==}
     dependencies:
       tr46: 0.0.3
       webidl-conversions: 3.0.1
@@ -3608,8 +3608,8 @@ packages:
     engines: {node: '>= 14'}
     dev: true
 
-  /youtube-dl-exec/2.0.12:
-    resolution: {integrity: sha512-fpaxeNzAeqihkNNtFi9vNeOS68E7tEvOm3JRp2X/1yMfrV29Rr7GViSKpt6mHSbqIuZrp1EBzzJsPuDPAGbKGg==}
+  /youtube-dl-exec/2.1.0:
+    resolution: {integrity: sha512-gf6fB83+ZrYegexrx0MbjCkuP7dmesCAge4rNpAP5ES/zzz8008eHg24Er0RM4OwN1XA4FIFWvR6OMMoayiWYg==}
     engines: {node: '>= 12'}
     requiresBuild: true
     dependencies:
