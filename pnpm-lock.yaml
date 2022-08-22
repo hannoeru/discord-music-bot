@@ -5,12 +5,12 @@ specifiers:
   '@discordjs/rest': ^1.0.1
   '@discordjs/voice': ^0.11.0
   '@hannoeru/eslint-config': ^0.8.10
-  discord-api-types: ^0.37.2
+  discord-api-types: ^0.37.3
   discord.js: ^14.2.0
   eslint: ^8.22.0
   esmon: ^2.0.1
   libsodium-wrappers: ^0.7.10
-  pino: ^8.4.1
+  pino: ^8.4.2
   pino-pretty: ^8.1.0
   typescript: ^4.7.4
   youtube-dl-exec: ^2.1.5
@@ -21,10 +21,10 @@ dependencies:
   '@discordjs/opus': 0.8.0
   '@discordjs/rest': 1.0.1
   '@discordjs/voice': 0.11.0_@discordjs+opus@0.8.0
-  discord-api-types: 0.37.2
+  discord-api-types: 0.37.3
   discord.js: 14.2.0
   libsodium-wrappers: 0.7.10
-  pino: 8.4.1
+  pino: 8.4.2
   pino-pretty: 8.1.0
   youtube-dl-exec: 2.1.5
   ytdl-core: 4.11.0
@@ -1009,8 +1009,8 @@ packages:
     resolution: {integrity: sha512-bz/NDyG0KBo/tY14vSkrwQ/n3HKPf87a0WFW/1M9+tXYK+vp5Z5EksawfCWo2zkAc6o7CClc0eff1Pjrqznlwg==}
     dev: false
 
-  /discord-api-types/0.37.2:
-    resolution: {integrity: sha512-JS4q0LGRxqY7TIsfORlIMzcmews+Qu3RmOWrxoEY+BR0g0sZlplEyY/Ltb3om6ZaBm+WNcAmAJxlsmAu4068Vw==}
+  /discord-api-types/0.37.3:
+    resolution: {integrity: sha512-LWcx1jDL8zanQJOPwNmHdFQTr/PFflDw1VYoRmTjme7LEKLr2Qqa2uz04gjN0eNEYskM2TYkOvNn3H5rblFM6g==}
     dev: false
 
   /discord.js/14.2.0:
@@ -2925,8 +2925,8 @@ packages:
     resolution: {integrity: sha512-mMMOwSKrmyl+Y12Ri2xhH1lbzQxwwpuru9VjyJpgFIH4asSj88F2csdMwN6+M5g1Ll4rmsYghHLQJw81tgZ7LQ==}
     dev: false
 
-  /pino/8.4.1:
-    resolution: {integrity: sha512-rZnbTUNFiYBH1H2OfYYVNBEFRDhN2nRaEmBD2+MDmGXSGyps+YPJ55LzWZP90zg7zyWKy0ZMqGlk47AO6OaBqQ==}
+  /pino/8.4.2:
+    resolution: {integrity: sha512-PlXDeGhJZfAuVay+wtlS02s5j8uisQveZExYdAm9MwwxUQSz9R7Q78XtjM2tTa4sa5KJmygimZjZxXXuHgV6ew==}
     hasBin: true
     dependencies:
       atomic-sleep: 1.0.0
