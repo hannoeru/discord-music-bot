@@ -14,7 +14,7 @@ specifiers:
   pino-pretty: ^9.1.0
   typescript: ^4.8.2
   youtube-dl-exec: ^2.1.5
-  ytdl-core: ^4.11.1
+  ytdl-core: ^4.11.2
   ytpl: ^2.3.0
 
 dependencies:
@@ -27,7 +27,7 @@ dependencies:
   pino: 8.4.2
   pino-pretty: 9.1.0
   youtube-dl-exec: 2.1.5
-  ytdl-core: 4.11.1
+  ytdl-core: 4.11.2
   ytpl: 2.3.0
 
 devDependencies:
@@ -3563,8 +3563,8 @@ packages:
       - encoding
     dev: false
 
-  /ytdl-core/4.11.1:
-    resolution: {integrity: sha512-0H2hl8kv9JA50qEUewPVpDCloyEVkXZfKJ6o2RNmkngfiY99pGVqE7jQbMT6Rs1QwZpF8GiMB50VWXqivpzlgQ==}
+  /ytdl-core/4.11.2:
+    resolution: {integrity: sha512-D939t9b4ZzP3v0zDvehR2q+KgG97UTgrTKju3pOPGQcXtl4W6W5z0EpznzcJFu+OOpl7S7Ge8hv8zU65QnxYug==}
     engines: {node: '>=12'}
     dependencies:
       m3u8stream: 0.8.6
