@@ -14,16 +14,16 @@
     "@hannoeru/eslint-config": "^0.8.10",
     "eslint": "^8.23.1",
     "esmon": "^2.0.1",
-    "typescript": "^4.8.2"
+    "typescript": "^4.8.3"
   },
   "dependencies": {
     "@discordjs/opus": "^0.8.0",
     "@discordjs/rest": "^1.1.0",
     "@discordjs/voice": "^0.11.0",
-    "discord-api-types": "^0.37.5",
+    "discord-api-types": "^0.37.10",
     "discord.js": "^14.3.0",
     "libsodium-wrappers": "^0.7.10",
-    "pino": "^8.4.2",
+    "pino": "^8.5.0",
     "pino-pretty": "^9.1.0",
     "youtube-dl-exec": "^2.1.5",
     "ytdl-core": "^4.11.2",
