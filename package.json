@@ -14,13 +14,13 @@
     "@hannoeru/eslint-config": "^0.8.10",
     "eslint": "^8.29.0",
     "esmon": "^2.0.1",
-    "typescript": "^4.9.3"
+    "typescript": "^4.9.4"
   },
   "dependencies": {
     "@discordjs/opus": "^0.9.0",
     "@discordjs/rest": "^1.4.0",
     "@discordjs/voice": "^0.14.0",
-    "discord-api-types": "^0.37.20",
+    "discord-api-types": "^0.37.21",
     "discord.js": "^14.7.1",
     "libsodium-wrappers": "^0.7.10",
     "pino": "^8.7.0",
