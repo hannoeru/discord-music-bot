@@ -5,7 +5,7 @@ specifiers:
   '@discordjs/rest': ^1.5.0
   '@discordjs/voice': ^0.14.0
   '@hannoeru/eslint-config': ^0.9.4
-  discord-api-types: ^0.37.26
+  discord-api-types: ^0.37.28
   discord.js: ^14.7.1
   eslint: ^8.31.0
   esmon: ^2.0.1
@@ -21,7 +21,7 @@ dependencies:
   '@discordjs/opus': 0.9.0
   '@discordjs/rest': 1.5.0
   '@discordjs/voice': 0.14.0_@discordjs+opus@0.9.0
-  discord-api-types: 0.37.26
+  discord-api-types: 0.37.28
   discord.js: 14.7.1
   libsodium-wrappers: 0.7.10
   pino: 8.8.0
@@ -80,7 +80,7 @@ packages:
     dependencies:
       '@discordjs/util': 0.1.0
       '@sapphire/shapeshift': 3.8.1
-      discord-api-types: 0.37.26
+      discord-api-types: 0.37.28
       fast-deep-equal: 3.1.3
       ts-mixer: 6.0.2
       tslib: 2.4.1
@@ -129,7 +129,7 @@ packages:
       '@discordjs/util': 0.1.0
       '@sapphire/async-queue': 1.5.0
       '@sapphire/snowflake': 3.4.0
-      discord-api-types: 0.37.26
+      discord-api-types: 0.37.28
       file-type: 18.0.0
       tslib: 2.4.1
       undici: 5.14.0
@@ -145,7 +145,7 @@ packages:
     engines: {node: '>=16.9.0'}
     dependencies:
       '@types/ws': 8.5.4
-      discord-api-types: 0.37.26
+      discord-api-types: 0.37.28
       prism-media: 1.3.4_@discordjs+opus@0.9.0
       tslib: 2.4.1
       ws: 8.12.0
@@ -1033,8 +1033,8 @@ packages:
       path-type: 4.0.0
     dev: true
 
-  /discord-api-types/0.37.26:
-    resolution: {integrity: sha512-xZT6qosExE1ziBgD8vYU2R2aQQKOrSYWI6AFq5CiYhQtwR+Nkt9gPA3v9kHj2RFnsWDI2AbtESiQ4Rrhsa06+Q==}
+  /discord-api-types/0.37.28:
+    resolution: {integrity: sha512-K0fw7m7km9th3dCQ2AR90q/FwX3uAj+OLc+Zuo39VY9vCn0Ux/iObM4y1zJYIH3vTc+QlrksVErUvyeONjOKMQ==}
     dev: false
 
   /discord.js/14.7.1:
@@ -1047,7 +1047,7 @@ packages:
       '@discordjs/util': 0.1.0
       '@sapphire/snowflake': 3.4.0
       '@types/ws': 8.5.4
-      discord-api-types: 0.37.26
+      discord-api-types: 0.37.28
       fast-deep-equal: 3.1.3
       lodash.snakecase: 4.1.1
       tslib: 2.4.1
