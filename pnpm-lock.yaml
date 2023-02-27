@@ -10,10 +10,10 @@ specifiers:
   eslint: ^8.35.0
   esmon: ^2.0.1
   libsodium-wrappers: ^0.7.11
-  pino: ^8.10.0
-  pino-pretty: ^9.3.0
+  pino: ^8.11.0
+  pino-pretty: ^9.4.0
   typescript: ^4.9.5
-  youtube-dl-exec: ^2.2.3
+  youtube-dl-exec: ^2.3.0
   ytdl-core: ^4.11.2
   ytpl: ^2.3.0
 
@@ -24,9 +24,9 @@ dependencies:
   discord-api-types: 0.37.35
   discord.js: 14.7.1
   libsodium-wrappers: 0.7.11
-  pino: 8.10.0
-  pino-pretty: 9.3.0
-  youtube-dl-exec: 2.2.3
+  pino: 8.11.0
+  pino-pretty: 9.4.0
+  youtube-dl-exec: 2.3.0
   ytdl-core: 4.11.2
   ytpl: 2.3.0
 
@@ -3100,8 +3100,8 @@ packages:
       split2: 4.1.0
     dev: false
 
-  /pino-pretty/9.3.0:
-    resolution: {integrity: sha512-T3FIzVc2sQfDY6FSjhvAEOeA1sby0YKI4he4VsI+d8q3MyYnfsPT+7OI3W/99v0v3TfJN/nMJradEvJWjbjRaQ==}
+  /pino-pretty/9.4.0:
+    resolution: {integrity: sha512-NIudkNLxnl7MGj1XkvsqVyRgo6meFP82ECXF2PlOI+9ghmbGuBUUqKJ7IZPIxpJw4vhhSva0IuiDSAuGh6TV9g==}
     hasBin: true
     dependencies:
       colorette: 2.0.19
@@ -3124,8 +3124,8 @@ packages:
     resolution: {integrity: sha512-KO0m2f1HkrPe9S0ldjx7za9BJjeHqBku5Ch8JyxETxT8dEFGz1PwgrHaOQupVYitpzbFSYm7nnljxD8dik2c+g==}
     dev: false
 
-  /pino/8.10.0:
-    resolution: {integrity: sha512-ODfIe+giJtQGsvNAEj5/sHHpL3TFBg161JBH4W62Hc0l0PJjsDFD1R7meLI4PZ2aoHDJznxFNShkJcaG/qJToQ==}
+  /pino/8.11.0:
+    resolution: {integrity: sha512-Z2eKSvlrl2rH8p5eveNUnTdd4AjJk8tAsLkHYZQKGHP4WTh2Gi1cOSOs3eWPqaj+niS3gj4UkoreoaWgF3ZWYg==}
     hasBin: true
     dependencies:
       atomic-sleep: 1.0.0
@@ -3871,8 +3871,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /youtube-dl-exec/2.2.3:
-    resolution: {integrity: sha512-OiyKsd2jMT9MxzYJUO10DUAglJVDnFk7u2MubpxR1DtWzmBYsNaAVch7ELOlKyh07iPdvqDzDZVyEokfC95O6g==}
+  /youtube-dl-exec/2.3.0:
+    resolution: {integrity: sha512-oeG4yIuMG0Sk0kcIjxH8yBX64E3xxM1G9qA3g2W6fYWpiOM7ZHKnsrwHKrpx1/qh767OFQKgRtKvHgfHqDjqsg==}
     engines: {node: '>= 14'}
     requiresBuild: true
     dependencies:
