@@ -37,8 +37,8 @@ dependencies:
 
 devDependencies:
   '@hannoeru/eslint-config':
-    specifier: ^0.9.4
-    version: 0.9.4(eslint@8.40.0)(typescript@5.0.4)
+    specifier: ^0.9.5
+    version: 0.9.5(eslint@8.40.0)(typescript@5.0.4)
   eslint:
     specifier: ^8.40.0
     version: 8.40.0
@@ -235,12 +235,12 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@hannoeru/eslint-config@0.9.4(eslint@8.40.0)(typescript@5.0.4):
-    resolution: {integrity: sha512-tvDC+fKxUggRxo+tJvXLQ9EnyaUmZSHGKVPqiDjCqxTP6Qli9gfWdRRMUZAgBEiyGK2TFT2AoeikWnL79Dn4ng==}
+  /@hannoeru/eslint-config@0.9.5(eslint@8.40.0)(typescript@5.0.4):
+    resolution: {integrity: sha512-LQVh7aYQYViy8Ie8Yzk+VNkfe4NVdr5HXxK/dGfuQ+NGI/R9JN3t1p/6IhmMxjM8sNdzl/cOFLJ7LTMMCeWd4Q==}
     peerDependencies:
       eslint: ^8.0.0
     dependencies:
-      '@hannoeru/eslint-plugin': 0.9.4(eslint@8.40.0)(typescript@5.0.4)
+      '@hannoeru/eslint-plugin': 0.9.5(eslint@8.40.0)(typescript@5.0.4)
       eslint: 8.40.0
     transitivePeerDependencies:
       - eslint-import-resolver-node
@@ -250,8 +250,8 @@ packages:
       - typescript
     dev: true
 
-  /@hannoeru/eslint-plugin@0.9.4(eslint@8.40.0)(typescript@5.0.4):
-    resolution: {integrity: sha512-k9yS6L0KRyf+IdBxHbOT3hRJ/TrayJZjxNtLkX3Nh4s97uxoTBAEY3lb7rvnp8/wc0Smsv4DTasEzeyB5OyRSw==}
+  /@hannoeru/eslint-plugin@0.9.5(eslint@8.40.0)(typescript@5.0.4):
+    resolution: {integrity: sha512-uMHYYCFgMM8lHSv7FxsQfb6+Qz4+EF61R7UX+2vsRbaUE61oWVp8sK4iFqQncxWwr9mUSFQeUlhVCOwBWnmoIw==}
     peerDependencies:
       eslint: ^8.0.0
     dependencies:
@@ -273,8 +273,8 @@ packages:
       eslint-plugin-promise: 6.1.1(eslint@8.40.0)
       eslint-plugin-react: 7.32.2(eslint@8.40.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@8.40.0)
-      eslint-plugin-unicorn: 45.0.2(eslint@8.40.0)
-      eslint-plugin-vue: 9.8.0(eslint@8.40.0)
+      eslint-plugin-unicorn: 47.0.0(eslint@8.40.0)
+      eslint-plugin-vue: 9.12.0(eslint@8.40.0)
       eslint-plugin-yml: 1.7.0(eslint@8.40.0)
       jsonc-eslint-parser: 2.3.0
       yaml-eslint-parser: 1.2.2
@@ -1830,11 +1830,11 @@ packages:
       string.prototype.matchall: 4.0.8
     dev: true
 
-  /eslint-plugin-unicorn@45.0.2(eslint@8.40.0):
-    resolution: {integrity: sha512-Y0WUDXRyGDMcKLiwgL3zSMpHrXI00xmdyixEGIg90gHnj0PcHY4moNv3Ppje/kDivdAy5vUeUr7z211ImPv2gw==}
-    engines: {node: '>=14.18'}
+  /eslint-plugin-unicorn@47.0.0(eslint@8.40.0):
+    resolution: {integrity: sha512-ivB3bKk7fDIeWOUmmMm9o3Ax9zbMz1Bsza/R2qm46ufw4T6VBFBaJIR1uN3pCKSmSXm8/9Nri8V+iUut1NhQGA==}
+    engines: {node: '>=16'}
     peerDependencies:
-      eslint: '>=8.28.0'
+      eslint: '>=8.38.0'
     dependencies:
       '@babel/helper-validator-identifier': 7.19.1
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.40.0)
@@ -1849,20 +1849,20 @@ packages:
       pluralize: 8.0.0
       read-pkg-up: 7.0.1
       regexp-tree: 0.1.27
-      regjsparser: 0.9.1
+      regjsparser: 0.10.0
       safe-regex: 2.1.1
       semver: 7.5.1
       strip-indent: 3.0.0
     dev: true
 
-  /eslint-plugin-vue@9.8.0(eslint@8.40.0):
-    resolution: {integrity: sha512-E/AXwcTzunyzM83C2QqDHxepMzvI2y6x+mmeYHbVDQlKFqmKYvRrhaVixEeeG27uI44p9oKDFiyCRw4XxgtfHA==}
+  /eslint-plugin-vue@9.12.0(eslint@8.40.0):
+    resolution: {integrity: sha512-xH8PgpDW2WwmFSmRfs/3iWogef1CJzQqX264I65zz77jDuxF2yLy7+GA2diUM8ZNATuSl1+UehMQkb5YEyau5w==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
     dependencies:
+      '@eslint-community/eslint-utils': 4.4.0(eslint@8.40.0)
       eslint: 8.40.0
-      eslint-utils: 3.0.0(eslint@8.40.0)
       natural-compare: 1.4.0
       nth-check: 2.1.1
       postcss-selector-parser: 6.0.12
@@ -3483,8 +3483,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /regjsparser@0.9.1:
-    resolution: {integrity: sha512-dQUtn90WanSNl+7mQKcXAgZxvUe7Z0SqXlgzv0za4LwiUhyzBC58yQO3liFoUgu8GiJVInAhJjkj1N0EtQ5nkQ==}
+  /regjsparser@0.10.0:
+    resolution: {integrity: sha512-qx+xQGZVsy55CH0a1hiVwHmqjLryfh7wQyF5HO07XJ9f7dQMY/gPQHhlyDkIzJKC+x2fUCpCcUODUUUFrm7SHA==}
     hasBin: true
     dependencies:
       jsesc: 0.5.0
