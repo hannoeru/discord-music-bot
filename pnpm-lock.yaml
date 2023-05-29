@@ -1,4 +1,8 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
   '@discordjs/opus':
@@ -26,8 +30,8 @@ dependencies:
     specifier: ^10.0.0
     version: 10.0.0
   youtube-dl-exec:
-    specifier: ^2.4.2
-    version: 2.4.2
+    specifier: ^2.4.3
+    version: 2.4.3
   ytdl-core:
     specifier: ^4.11.4
     version: 4.11.4
@@ -4087,8 +4091,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /youtube-dl-exec@2.4.2:
-    resolution: {integrity: sha512-0anzwaVtljlTxcHUMlyYkef9jTM52cehvIexORVs4gWgLJ5S4i0PlzGUpn2f/eo1/WWB7rNPztz/BXt0bBoC1A==}
+  /youtube-dl-exec@2.4.3:
+    resolution: {integrity: sha512-4/ikMG2rP9Vukggd8Z7nutEWeb8YN28//yK6X4TDifntuQN6p2sZnGBr1iFgFRoZH6DQspOc7xg+TsZ+GhcwRQ==}
     engines: {node: '>= 14'}
     requiresBuild: true
     dependencies:
