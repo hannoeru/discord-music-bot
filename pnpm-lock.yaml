@@ -44,7 +44,7 @@ devDependencies:
     specifier: ^0.9.5
     version: 0.9.5(eslint@8.47.0)(typescript@5.1.6)
   eslint:
-    specifier: ^8.46.0
+    specifier: ^8.47.0
     version: 8.47.0
   esmon:
     specifier: ^2.0.1
