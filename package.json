@@ -11,8 +11,8 @@
   "author": "Han <me@hanlee.co>",
   "license": "MIT",
   "devDependencies": {
-    "@hannoeru/eslint-config": "^0.9.5",
-    "eslint": "^8.47.0",
+    "@hannoeru/eslint-config": "^0.9.7",
+    "eslint": "^8.48.0",
     "esmon": "^2.0.1",
     "typescript": "^5.2.2"
   },
