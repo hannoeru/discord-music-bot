@@ -24,14 +24,14 @@ dependencies:
     specifier: ^0.7.11
     version: 0.7.11
   pino:
-    specifier: ^8.15.0
-    version: 8.15.0
+    specifier: ^8.15.1
+    version: 8.15.1
   pino-pretty:
     specifier: ^10.2.0
     version: 10.2.0
   youtube-dl-exec:
-    specifier: ^2.4.7
-    version: 2.4.7
+    specifier: ^2.4.8
+    version: 2.4.8
   ytdl-core:
     specifier: ^4.11.5
     version: 4.11.5
@@ -3254,8 +3254,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /pino-abstract-transport@1.0.0:
-    resolution: {integrity: sha512-c7vo5OpW4wIS42hUVcT5REsL8ZljsUfBjqV/e2sFxmFEFZiq1XLUp5EYLtuDH6PEHq9W1egWqRbnLUP5FuZmOA==}
+  /pino-abstract-transport@1.1.0:
+    resolution: {integrity: sha512-lsleG3/2a/JIWUtf9Q5gUNErBqwIu1tUKTT3dUzaf5DySw9ra1wcqKjJjLX1VTY64Wk1eEOYsVGSaGfCK85ekA==}
     dependencies:
       readable-stream: 4.4.2
       split2: 4.2.0
@@ -3273,7 +3273,7 @@ packages:
       joycon: 3.1.1
       minimist: 1.2.8
       on-exit-leak-free: 2.1.0
-      pino-abstract-transport: 1.0.0
+      pino-abstract-transport: 1.1.0
       pump: 3.0.0
       readable-stream: 4.4.2
       secure-json-parse: 2.7.0
@@ -3285,14 +3285,14 @@ packages:
     resolution: {integrity: sha512-cHjPPsE+vhj/tnhCy/wiMh3M3z3h/j15zHQX+S9GkTBgqJuTuJzYJ4gUyACLhDaJ7kk9ba9iRDmbH2tJU03OiA==}
     dev: false
 
-  /pino@8.15.0:
-    resolution: {integrity: sha512-olUADJByk4twxccmAxb1RiGKOSvddHugCV3wkqjyv+3Sooa2KLrmXrKEWOKi0XPCLasRR5jBXxioE1jxUa4KzQ==}
+  /pino@8.15.1:
+    resolution: {integrity: sha512-Cp4QzUQrvWCRJaQ8Lzv0mJzXVk4z2jlq8JNKMGaixC2Pz5L4l2p95TkuRvYbrEbe85NQsDKrAd4zalf7Ml6WiA==}
     hasBin: true
     dependencies:
       atomic-sleep: 1.0.0
       fast-redact: 3.3.0
       on-exit-leak-free: 2.1.0
-      pino-abstract-transport: 1.0.0
+      pino-abstract-transport: 1.1.0
       pino-std-serializers: 6.2.2
       process-warning: 2.2.0
       quick-format-unescaped: 4.0.4
@@ -4101,8 +4101,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /youtube-dl-exec@2.4.7:
-    resolution: {integrity: sha512-sJ3zV0hlEhznnYkucbRvE5xi5fQ/se+po0LzYd9/TxvNOYD5oBSH/YJ8OPdhgleKdlM4uIPsXOYs6Q5gb2iO8w==}
+  /youtube-dl-exec@2.4.8:
+    resolution: {integrity: sha512-1Jk/Ib4WGTNHtR8suXsiiEPAmWMwW4ggmRyJknwDortCEx4Ud3CK4XF03rvoRw24jTUJSVgmlg9ELFrdjzd9mg==}
     engines: {node: '>= 14'}
     requiresBuild: true
     dependencies:
