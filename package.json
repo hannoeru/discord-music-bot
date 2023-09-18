@@ -22,7 +22,7 @@
     "@discordjs/voice": "^0.16.0",
     "discord-api-types": "^0.37.56",
     "discord.js": "^14.13.0",
-    "libsodium-wrappers": "^0.7.11",
+    "libsodium-wrappers": "^0.7.13",
     "pino": "^8.15.1",
     "pino-pretty": "^10.2.0",
     "youtube-dl-exec": "^2.4.8",
