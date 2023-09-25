@@ -15,8 +15,8 @@ dependencies:
     specifier: ^0.16.0
     version: 0.16.0(@discordjs/opus@0.9.0)
   discord-api-types:
-    specifier: ^0.37.56
-    version: 0.37.56
+    specifier: ^0.37.57
+    version: 0.37.57
   discord.js:
     specifier: ^14.13.0
     version: 14.13.0
@@ -30,8 +30,8 @@ dependencies:
     specifier: ^10.2.0
     version: 10.2.0
   youtube-dl-exec:
-    specifier: ^2.4.8
-    version: 2.4.8
+    specifier: ^2.4.13
+    version: 2.4.13
   ytdl-core:
     specifier: ^4.11.5
     version: 4.11.5
@@ -152,7 +152,7 @@ packages:
       '@discordjs/util': 0.3.1
       '@sapphire/async-queue': 1.5.0
       '@sapphire/snowflake': 3.5.1
-      discord-api-types: 0.37.56
+      discord-api-types: 0.37.57
       file-type: 18.5.0
       tslib: 2.6.2
       undici: 5.24.0
@@ -188,7 +188,7 @@ packages:
     engines: {node: '>=16.9.0'}
     dependencies:
       '@types/ws': 8.5.5
-      discord-api-types: 0.37.56
+      discord-api-types: 0.37.57
       prism-media: 1.3.5(@discordjs/opus@0.9.0)
       tslib: 2.6.2
       ws: 8.14.1
@@ -1226,8 +1226,8 @@ packages:
     resolution: {integrity: sha512-X4CDiMnDbA3s3RaUXWXmgAIbY1uxab3fqe3qwzg5XutR3wjqi7M3IkgQbsIBzpqBN2YWr/Qdv7JrFRqSgb4TFg==}
     dev: false
 
-  /discord-api-types@0.37.56:
-    resolution: {integrity: sha512-Ih3wj0ZTaQxaJRqUEXHMIXfXB86bwMGC0wc2nNsyCJqeo3lC4qnxXtFIsC+IGI46+dSIinuayCAZ6sLEEM02Bw==}
+  /discord-api-types@0.37.57:
+    resolution: {integrity: sha512-EGZgYrNVFVYux2tWZNMnemNgZh6sjQmKj1d9PS7++fYzHx7ksXtO5e++PqOZXzXkQ38z2uJ2tRlPFS8iKHl7qw==}
     dev: false
 
   /discord.js@14.13.0:
@@ -4124,8 +4124,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /youtube-dl-exec@2.4.8:
-    resolution: {integrity: sha512-1Jk/Ib4WGTNHtR8suXsiiEPAmWMwW4ggmRyJknwDortCEx4Ud3CK4XF03rvoRw24jTUJSVgmlg9ELFrdjzd9mg==}
+  /youtube-dl-exec@2.4.13:
+    resolution: {integrity: sha512-Wqs2GujiZJcjo3D1/gm3y4tm9EJnEA6PnjnHd5WDNNK3Nai50USlKVTWGvDMjcg/UdiswkixPSsvSS0GXf5AhQ==}
     engines: {node: '>= 14'}
     requiresBuild: true
     dependencies:
