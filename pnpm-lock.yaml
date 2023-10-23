@@ -155,7 +155,7 @@ packages:
       discord-api-types: 0.37.60
       file-type: 18.5.0
       tslib: 2.6.2
-      undici: 5.26.3
+      undici: 5.22.1
     dev: false
 
   /@discordjs/rest@2.0.1:
@@ -264,11 +264,6 @@ packages:
     resolution: {integrity: sha512-mjZVbpaeMZludF2fsWLD0Z9gCref1Tk4i9+wddjRvpUNqqcndPkBD09N/Mapey0b3jaXbLm2kICwFv2E64QinA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
-
-  /@fastify/busboy@2.0.0:
-    resolution: {integrity: sha512-JUFJad5lv7jxj926GPgymrWQxxjPYuJNiNjNMzqT+HiuP6Vl3dk5xzG+8sTX96np0ZAluvaMzPsjhHZ5rNuNQQ==}
-    engines: {node: '>=14'}
-    dev: false
 
   /@hannoeru/eslint-config@0.9.7(eslint@8.52.0)(typescript@5.2.2):
     resolution: {integrity: sha512-ciQcjQshFgaDCFzwcLybQPtLjwVkaKwMbGDwkzUs4fe8OCEQNY9UGizCOnKKhXl2ItLZot4d/jtpZ8KOgdQ6hQ==}
@@ -3991,13 +3986,6 @@ packages:
     engines: {node: '>=14.0'}
     dependencies:
       busboy: 1.6.0
-    dev: false
-
-  /undici@5.26.3:
-    resolution: {integrity: sha512-H7n2zmKEWgOllKkIUkLvFmsJQj062lSm3uA4EYApG8gLuiOM0/go9bIoC3HVaSnfg4xunowDE2i9p8drkXuvDw==}
-    engines: {node: '>=14.0'}
-    dependencies:
-      '@fastify/busboy': 2.0.0
     dev: false
 
   /unist-util-stringify-position@2.0.3:
