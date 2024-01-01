@@ -15,8 +15,8 @@ dependencies:
     specifier: ^0.16.1
     version: 0.16.1(@discordjs/opus@0.9.0)
   discord-api-types:
-    specifier: ^0.37.66
-    version: 0.37.66
+    specifier: ^0.37.67
+    version: 0.37.67
   discord.js:
     specifier: ^14.14.1
     version: 14.14.1
@@ -24,14 +24,14 @@ dependencies:
     specifier: ^0.7.13
     version: 0.7.13
   pino:
-    specifier: ^8.17.1
-    version: 8.17.1
+    specifier: ^8.17.2
+    version: 8.17.2
   pino-pretty:
-    specifier: ^10.3.0
-    version: 10.3.0
+    specifier: ^10.3.1
+    version: 10.3.1
   youtube-dl-exec:
-    specifier: ^2.5.3
-    version: 2.5.3
+    specifier: ^2.5.4
+    version: 2.5.4
   ytdl-core:
     specifier: ^4.11.5
     version: 4.11.5
@@ -157,7 +157,7 @@ packages:
       '@discordjs/util': 0.3.1
       '@sapphire/async-queue': 1.5.1
       '@sapphire/snowflake': 3.5.2
-      discord-api-types: 0.37.66
+      discord-api-types: 0.37.67
       file-type: 18.7.0
       tslib: 2.6.2
       undici: 5.27.2
@@ -1246,8 +1246,8 @@ packages:
     resolution: {integrity: sha512-o/dXNFfhBpYHpQFdT6FWzeO7pKc838QeeZ9d91CfVAtpr5XLK4B/zYxQbYgPdoMiTDvJfzcsLW5naXgmHGDNXw==}
     dev: false
 
-  /discord-api-types@0.37.66:
-    resolution: {integrity: sha512-3Q+6uBODmVaPAmZZ1jYQiQBbp0hqArgSU9Y6DuYY6KW5Sdij91bwbmFnnVI5XvATRkY+Wk9KMBWFzAEwSDs+1w==}
+  /discord-api-types@0.37.67:
+    resolution: {integrity: sha512-4HEzUEmwGPXWJdVhGZ/K+9eWs8kurdn5r/I8qD3/0hb14I0MZvx8K/JOyLhKLgcR4/8/jcr6Xej820BNgNXN7A==}
     dev: false
 
   /discord.js@14.14.1:
@@ -3291,8 +3291,8 @@ packages:
       split2: 4.2.0
     dev: false
 
-  /pino-pretty@10.3.0:
-    resolution: {integrity: sha512-JthvQW289q3454mhM3/38wFYGWPiBMR28T3CpDNABzoTQOje9UKS7XCJQSnjWF9LQGQkGd8D7h0oq+qwiM3jFA==}
+  /pino-pretty@10.3.1:
+    resolution: {integrity: sha512-az8JbIYeN/1iLj2t0jR9DV48/LQ3RC6hZPpapKPkb84Q+yTidMCpgWxIT3N0flnBDilyBQ1luWNpOeJptjdp/g==}
     hasBin: true
     dependencies:
       colorette: 2.0.20
@@ -3315,8 +3315,8 @@ packages:
     resolution: {integrity: sha512-cHjPPsE+vhj/tnhCy/wiMh3M3z3h/j15zHQX+S9GkTBgqJuTuJzYJ4gUyACLhDaJ7kk9ba9iRDmbH2tJU03OiA==}
     dev: false
 
-  /pino@8.17.1:
-    resolution: {integrity: sha512-YoN7/NJgnsJ+fkADZqjhRt96iepWBndQHeClmSBH0sQWCb8zGD74t00SK4eOtKFi/f8TUmQnfmgglEhd2kI1RQ==}
+  /pino@8.17.2:
+    resolution: {integrity: sha512-LA6qKgeDMLr2ux2y/YiUt47EfgQ+S9LznBWOJdN3q1dx2sv0ziDLUBeVpyVv17TEcGCBuWf0zNtg3M5m1NhhWQ==}
     hasBin: true
     dependencies:
       atomic-sleep: 1.0.0
@@ -3324,7 +3324,7 @@ packages:
       on-exit-leak-free: 2.1.2
       pino-abstract-transport: 1.1.0
       pino-std-serializers: 6.2.2
-      process-warning: 2.3.2
+      process-warning: 3.0.0
       quick-format-unescaped: 4.0.4
       real-require: 0.2.0
       safe-stable-stringify: 2.4.3
@@ -3370,8 +3370,8 @@ packages:
       '@discordjs/opus': 0.9.0
     dev: false
 
-  /process-warning@2.3.2:
-    resolution: {integrity: sha512-n9wh8tvBe5sFmsqlg+XQhaQLumwpqoAUruLwjCopgTmUBjJ/fjtBsJzKleCaIGBOMXYEhp1YfKl4d7rJ5ZKJGA==}
+  /process-warning@3.0.0:
+    resolution: {integrity: sha512-mqn0kFRl0EoqhnL0GQ0veqFHyIN1yig9RHh/InzORTUiZHFRAur+aMtRkELNwGs9aNwKS6tg/An4NYBPGwvtzQ==}
     dev: false
 
   /process@0.11.10:
@@ -3843,8 +3843,8 @@ packages:
       real-require: 0.2.0
     dev: false
 
-  /tinyspawn@1.2.2:
-    resolution: {integrity: sha512-QInaMwwUk/Vr+pbM5ZwqoUcS7zRZz/hQkCBMQf4N2miI4TqIbh7OyI6dSgSPTdseeafvpmZjWWlUJx9s+pk/zA==}
+  /tinyspawn@1.2.4:
+    resolution: {integrity: sha512-JZRdfjvlVPNWg2HEVadAMBXRKdngN6D8LPj+0RNd7VKWBoEJM3zYhZziQ02XxiDcVVT+QkyOhaGjC6Q3P5AJ/Q==}
     engines: {node: '>= 18'}
     dev: false
 
@@ -4161,8 +4161,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /youtube-dl-exec@2.5.3:
-    resolution: {integrity: sha512-rmrpiPA/VXMdUvvIGTbHKuKMgVCjsM17K9ON80JZrL8o+dDP8cpSuOdJ+vHodudyGcUEeGLVXSgYyK4YWTk7mQ==}
+  /youtube-dl-exec@2.5.4:
+    resolution: {integrity: sha512-O/FxleNLoKq/1j+DHqP4EfZNQin5txDnpl6csyGl4UPpvDWO0Hcb/Y27pcFhYLtSFSV4/9BfHue2lvTc7Mz5jQ==}
     engines: {node: '>= 14'}
     requiresBuild: true
     dependencies:
@@ -4170,7 +4170,7 @@ packages:
       dargs: 7.0.0
       is-unix: 2.0.10
       simple-get: 4.0.1
-      tinyspawn: 1.2.2
+      tinyspawn: 1.2.4
     dev: false
 
   /ytdl-core@4.11.5:
