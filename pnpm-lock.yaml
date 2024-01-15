@@ -30,8 +30,8 @@ dependencies:
     specifier: ^10.3.1
     version: 10.3.1
   youtube-dl-exec:
-    specifier: ^2.5.4
-    version: 2.5.4
+    specifier: ^2.5.5
+    version: 2.5.5
   ytdl-core:
     specifier: ^4.11.5
     version: 4.11.5
@@ -4183,8 +4183,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /youtube-dl-exec@2.5.4:
-    resolution: {integrity: sha512-O/FxleNLoKq/1j+DHqP4EfZNQin5txDnpl6csyGl4UPpvDWO0Hcb/Y27pcFhYLtSFSV4/9BfHue2lvTc7Mz5jQ==}
+  /youtube-dl-exec@2.5.5:
+    resolution: {integrity: sha512-3M5w1RD/ggcMjkB0zFrjOWuDB4JfsJsuXRau6so5jZwR4N/vpcTPDibfQayM9rVTp9SieqhdI8j8nFA+zvC22A==}
     engines: {node: '>= 14'}
     requiresBuild: true
     dependencies:
@@ -4207,6 +4207,7 @@ packages:
   /ytpl@2.3.0:
     resolution: {integrity: sha512-Cfw2rxq3PFK6qgWr2Z8gsRefVahEzbn9XEuiJldqdXHE6GhO7kTfEvbZKdfXing1SmgW635uJ/UL2g8r0fvu2Q==}
     engines: {node: '>=8'}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
     dependencies:
       miniget: 4.2.3
     dev: false
