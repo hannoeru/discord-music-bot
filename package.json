@@ -25,7 +25,7 @@
     "libsodium-wrappers": "^0.7.13",
     "pino": "^8.17.2",
     "pino-pretty": "^10.3.1",
-    "youtube-dl-exec": "^2.5.5",
+    "youtube-dl-exec": "^2.5.6",
     "ytdl-core": "^4.11.5",
     "ytpl": "^2.3.0"
   }
