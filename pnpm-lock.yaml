@@ -15,8 +15,8 @@ dependencies:
     specifier: ^0.16.1
     version: 0.16.1(@discordjs/opus@0.9.0)
   discord-api-types:
-    specifier: ^0.37.69
-    version: 0.37.69
+    specifier: ^0.37.70
+    version: 0.37.70
   discord.js:
     specifier: ^14.14.1
     version: 14.14.1
@@ -24,8 +24,8 @@ dependencies:
     specifier: ^0.7.13
     version: 0.7.13
   pino:
-    specifier: ^8.18.0
-    version: 8.18.0
+    specifier: ^8.19.0
+    version: 8.19.0
   pino-pretty:
     specifier: ^10.3.1
     version: 10.3.1
@@ -157,7 +157,7 @@ packages:
       '@discordjs/util': 0.3.1
       '@sapphire/async-queue': 1.5.2
       '@sapphire/snowflake': 3.5.3
-      discord-api-types: 0.37.69
+      discord-api-types: 0.37.70
       file-type: 18.7.0
       tslib: 2.6.2
       undici: 5.28.3
@@ -1269,8 +1269,8 @@ packages:
     resolution: {integrity: sha512-o/dXNFfhBpYHpQFdT6FWzeO7pKc838QeeZ9d91CfVAtpr5XLK4B/zYxQbYgPdoMiTDvJfzcsLW5naXgmHGDNXw==}
     dev: false
 
-  /discord-api-types@0.37.69:
-    resolution: {integrity: sha512-c0rHc5YGNIXQkI+V7QwP8y77wxo74ITNeZmMwxtKC/l01aIF/gKBG/U2MKhUt2iaeRH9XwAt9PT3AI9JQVvKVA==}
+  /discord-api-types@0.37.70:
+    resolution: {integrity: sha512-8EtfZR0KwOK+yP5q/llWILdUAPmGmF1LmcVUYf7+gtGigz2pu6WR38ZN+IWtMzohY1Ujl2u3KOdbFvrEz9EC8w==}
     dev: false
 
   /discord.js@14.14.1:
@@ -3372,8 +3372,8 @@ packages:
     resolution: {integrity: sha512-cHjPPsE+vhj/tnhCy/wiMh3M3z3h/j15zHQX+S9GkTBgqJuTuJzYJ4gUyACLhDaJ7kk9ba9iRDmbH2tJU03OiA==}
     dev: false
 
-  /pino@8.18.0:
-    resolution: {integrity: sha512-Mz/gKiRyuXu4HnpHgi1YWdHQCoWMufapzooisvFn78zl4dZciAxS+YeRkUxXl1ee/SzU80YCz1zpECCh4oC6Aw==}
+  /pino@8.19.0:
+    resolution: {integrity: sha512-oswmokxkav9bADfJ2ifrvfHUwad6MLp73Uat0IkQWY3iAw5xTRoznXbXksZs8oaOUMpmhVWD+PZogNzllWpJaA==}
     hasBin: true
     dependencies:
       atomic-sleep: 1.0.0
