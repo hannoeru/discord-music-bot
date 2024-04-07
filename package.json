@@ -23,7 +23,7 @@
     "discord-api-types": "^0.37.79",
     "discord.js": "^14.14.1",
     "libsodium-wrappers": "^0.7.13",
-    "pino": "^8.19.0",
+    "pino": "^8.20.0",
     "pino-pretty": "^11.0.0",
     "youtube-dl-exec": "^2.5.8",
     "ytdl-core": "^4.11.5",
