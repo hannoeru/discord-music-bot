@@ -18,8 +18,8 @@ importers:
         specifier: ^0.17.0
         version: 0.17.0(@discordjs/opus@0.9.0)
       discord-api-types:
-        specifier: ^0.37.90
-        version: 0.37.90
+        specifier: ^0.37.91
+        version: 0.37.91
       discord.js:
         specifier: ^14.15.3
         version: 14.15.3
@@ -33,8 +33,8 @@ importers:
         specifier: ^11.2.1
         version: 11.2.1
       youtube-dl-exec:
-        specifier: ^3.0.5
-        version: 3.0.5
+        specifier: ^3.0.6
+        version: 3.0.6
       ytdl-core:
         specifier: ^4.11.5
         version: 4.11.5
@@ -695,8 +695,8 @@ packages:
   discord-api-types@0.37.83:
     resolution: {integrity: sha512-urGGYeWtWNYMKnYlZnOnDHm8fVRffQs3U0SpE8RHeiuLKb/u92APS8HoQnPTFbnXmY1vVnXjXO4dOxcAn3J+DA==}
 
-  discord-api-types@0.37.90:
-    resolution: {integrity: sha512-lpOJSGrqHuXoM4FV/2HtjoaJpCClGFHpRNIdZEW8zPINlsCHNSfIwA2EQ8dxeE6k1QhhTuM9ZlOGVYXoU7FLgA==}
+  discord-api-types@0.37.91:
+    resolution: {integrity: sha512-yPGOP1SlkRtnT9Vor5noZHNm7t+EpRdaDvEoeqWTSCzeenMWyB1RbOGKYxdZ1OZijji51Yd1yodhOTi9CfrrQg==}
 
   discord.js@14.15.3:
     resolution: {integrity: sha512-/UJDQO10VuU6wQPglA4kz2bw2ngeeSbogiIPx/TsnctfzV/tNf+q+i1HlgtX1OGpeOBpJH9erZQNO5oRM2uAtQ==}
@@ -2363,8 +2363,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  youtube-dl-exec@3.0.5:
-    resolution: {integrity: sha512-5lEpsiBGcykHdMD/CmCI4C3EurB5UsWQbAXsprkI/8fjzhOb8deBzV48WZOxq0+iw6hA1dhEDcJY7oJSeDc9Sg==}
+  youtube-dl-exec@3.0.6:
+    resolution: {integrity: sha512-9BZ9wf5tJpRWKviKOSnJ2napAzNy0Tp8HgLIv6sA55Ilnx2gnoHxlOtm5lNPrxI+XZc7XKhRxQ95o8Wymbf47Q==}
     engines: {node: '>= 18'}
 
   ytdl-core@4.11.5:
@@ -3151,7 +3151,7 @@ snapshots:
 
   discord-api-types@0.37.83: {}
 
-  discord-api-types@0.37.90: {}
+  discord-api-types@0.37.91: {}
 
   discord.js@14.15.3:
     dependencies:
@@ -5045,7 +5045,7 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  youtube-dl-exec@3.0.5:
+  youtube-dl-exec@3.0.6:
     dependencies:
       bin-version-check: 6.0.0
       dargs: 7.0.0
