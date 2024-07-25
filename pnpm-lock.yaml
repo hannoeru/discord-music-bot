@@ -27,11 +27,11 @@ importers:
         specifier: ^0.7.14
         version: 0.7.14
       pino:
-        specifier: ^9.3.1
-        version: 9.3.1
+        specifier: ^9.3.2
+        version: 9.3.2
       pino-pretty:
-        specifier: ^11.2.1
-        version: 11.2.1
+        specifier: ^11.2.2
+        version: 11.2.2
       youtube-dl-exec:
         specifier: ^3.0.7
         version: 3.0.7
@@ -1855,15 +1855,15 @@ packages:
   pino-abstract-transport@1.2.0:
     resolution: {integrity: sha512-Guhh8EZfPCfH+PMXAb6rKOjGQEoy0xlAIn+irODG5kgfYV+BQ0rGYYWTIel3P5mmyXqkYkPmdIkywsn6QKUR1Q==}
 
-  pino-pretty@11.2.1:
-    resolution: {integrity: sha512-O05NuD9tkRasFRWVaF/uHLOvoRDFD7tb5VMertr78rbsYFjYp48Vg3477EshVAF5eZaEw+OpDl/tu+B0R5o+7g==}
+  pino-pretty@11.2.2:
+    resolution: {integrity: sha512-2FnyGir8nAJAqD3srROdrF1J5BIcMT4nwj7hHSc60El6Uxlym00UbCCd8pYIterstVBFlMyF1yFV8XdGIPbj4A==}
     hasBin: true
 
   pino-std-serializers@7.0.0:
     resolution: {integrity: sha512-e906FRY0+tV27iq4juKzSYPbUj2do2X2JX4EzSca1631EB2QJQUqGbDuERal7LCtOpxl6x3+nvo9NPZcmjkiFA==}
 
-  pino@9.3.1:
-    resolution: {integrity: sha512-afSfrq/hUiW/MFmQcLEwV9Zh8Ry6MrMTOyBU53o/fc0gEl+1OZ/Fks/xQCM2nOC0C/OfDtQMnT2d8c3kpcfSzA==}
+  pino@9.3.2:
+    resolution: {integrity: sha512-WtARBjgZ7LNEkrGWxMBN/jvlFiE17LTbBoH0konmBU684Kd0uIiDwBXlcTCW7iJnA6HfIKwUssS/2AC6cDEanw==}
     hasBin: true
 
   pluralize@8.0.0:
@@ -1903,8 +1903,8 @@ packages:
       opusscript:
         optional: true
 
-  process-warning@3.0.0:
-    resolution: {integrity: sha512-mqn0kFRl0EoqhnL0GQ0veqFHyIN1yig9RHh/InzORTUiZHFRAur+aMtRkELNwGs9aNwKS6tg/An4NYBPGwvtzQ==}
+  process-warning@4.0.0:
+    resolution: {integrity: sha512-/MyYDxttz7DfGMMHiysAsFE4qF+pQYAA8ziO/3NcRVrQ5fSk+Mns4QZA/oRPFzvcqNoVJXQNWNAsdwBXLUkQKw==}
 
   process@0.11.10:
     resolution: {integrity: sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==}
@@ -4479,7 +4479,7 @@ snapshots:
       readable-stream: 4.5.2
       split2: 4.2.0
 
-  pino-pretty@11.2.1:
+  pino-pretty@11.2.2:
     dependencies:
       colorette: 2.0.20
       dateformat: 4.6.3
@@ -4498,14 +4498,14 @@ snapshots:
 
   pino-std-serializers@7.0.0: {}
 
-  pino@9.3.1:
+  pino@9.3.2:
     dependencies:
       atomic-sleep: 1.0.0
       fast-redact: 3.5.0
       on-exit-leak-free: 2.1.2
       pino-abstract-transport: 1.2.0
       pino-std-serializers: 7.0.0
-      process-warning: 3.0.0
+      process-warning: 4.0.0
       quick-format-unescaped: 4.0.4
       real-require: 0.2.0
       safe-stable-stringify: 2.4.3
@@ -4531,7 +4531,7 @@ snapshots:
     optionalDependencies:
       '@discordjs/opus': 0.9.0
 
-  process-warning@3.0.0: {}
+  process-warning@4.0.0: {}
 
   process@0.11.10: {}
 
