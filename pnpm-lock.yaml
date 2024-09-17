@@ -33,8 +33,8 @@ importers:
         specifier: ^11.2.2
         version: 11.2.2
       youtube-dl-exec:
-        specifier: ^3.0.8
-        version: 3.0.8
+        specifier: ^3.0.9
+        version: 3.0.9
       ytdl-core:
         specifier: ^4.11.5
         version: 4.11.5
@@ -2382,8 +2382,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  youtube-dl-exec@3.0.8:
-    resolution: {integrity: sha512-ImhLBYKzidKG2WOebpSRfNG8Dz1Ally6iJC+L4b4GwK9+DM2XAajKpMlNaio5mfwqy33yLx9C+7HcV0yPNwZlg==}
+  youtube-dl-exec@3.0.9:
+    resolution: {integrity: sha512-QE+y3cZxFGrqSZgzl4nFMucyime6JO53+logzYjgbA/GIK0C3lnncCQdyswTsLlo5X4eoL22hJOfDQ8Uf6WXHQ==}
     engines: {node: '>= 18'}
 
   ytdl-core@4.11.5:
@@ -5069,7 +5069,7 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  youtube-dl-exec@3.0.8:
+  youtube-dl-exec@3.0.9:
     dependencies:
       bin-version-check: 6.0.0
       dargs: 7.0.0
