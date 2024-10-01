@@ -21,11 +21,11 @@
     "@discordjs/rest": "^2.4.0",
     "@discordjs/voice": "^0.17.0",
     "discord-api-types": "^0.37.101",
-    "discord.js": "^14.16.2",
+    "discord.js": "^14.16.3",
     "libsodium-wrappers": "^0.7.15",
     "pino": "^9.4.0",
     "pino-pretty": "^11.2.2",
-    "youtube-dl-exec": "^3.0.9",
+    "youtube-dl-exec": "^3.0.10",
     "ytdl-core": "^4.11.5",
     "ytpl": "^2.3.0"
   }
